@@ -1,0 +1,38 @@
+{
+  "name": "genpark-realtime-neural-3d-mesh-pbr-texture-generator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Real-time neural 3D asset generator synthesizing watertight polygonal meshes, UV unwrap, and PBR textures.",
+  "author": "genpark",
+  "category": "neural-3d",
+  "tags": [
+    "speedrun-ai",
+    "neural-3d",
+    "gltf-generator",
+    "pbr-textures",
+    "realtime-mesh"
+  ],
+  "inputs": {
+    "text_prompt": {
+      "type": "string"
+    },
+    "target_polycount": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "asset_generation_id": {
+      "type": "string"
+    },
+    "mesh_format": {
+      "type": "string"
+    },
+    "pbr_maps_synthesized": {
+      "type": "array"
+    },
+    "gltf_model_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
